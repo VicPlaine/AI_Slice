@@ -1,0 +1,25 @@
+[project]
+name = "ai-slice-backend"
+version = "0.2.0"
+description = "AI Slice - 多场景视频切片工作台后端"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.115.0",
+    "uvicorn[standard]==0.30.0",
+    "sqlalchemy[asyncio]==2.0.35",
+    "asyncpg==0.30.0",
+    "alembic==1.14.0",
+    "pydantic-settings==2.5.0",
+    "python-dotenv>=1.0.0",
+    "openai==1.50.0",
+    "pydub==0.25.1",
+    "python-multipart==0.0.12",
+    "httpx==0.27.0",
+    "psycopg[binary]>=3.2",
+    "dashscope>=1.27.1,<2",
+]
+
+[project.optional-dependencies]
+# 开发工具
+dev = ["ruff", "pytest", "pytest-asyncio"]

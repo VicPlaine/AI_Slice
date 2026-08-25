@@ -1,0 +1,103 @@
+# ══════════════════════════════════════════
+#  Python
+# ══════════════════════════════════════════
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# ══════════════════════════════════════════
+#  Environment & Secrets
+# ══════════════════════════════════════════
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ══════════════════════════════════════════
+#  Node.js / Frontend
+# ══════════════════════════════════════════
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# ══════════════════════════════════════════
+#  Local Storage & Temp Files
+# ══════════════════════════════════════════
+storage/
+/tmp/
+*.tmp
+*.bak
+*.swp
+
+# Local binary runtimes (download/install locally)
+tools/cuda/
+tools/ffmpeg/bin/*.exe
+
+# ══════════════════════════════════════════
+#  FFmpeg.wasm Core (large binary, download at build time)
+# ══════════════════════════════════════════
+frontend/public/ffmpeg/*.wasm
+frontend/public/ffmpeg/*.js
+
+# ══════════════════════════════════════════
+#  IDE & OS
+# ══════════════════════════════════════════
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# ══════════════════════════════════════════
+#  Database & Alembic
+# ══════════════════════════════════════════
+*.db
+*.sqlite3
+
+# ══════════════════════════════════════════
+#  Logs
+# ══════════════════════════════════════════
+*.log
+logs/
+.run/
+
+# ══════════════════════════════════════════
+#  Docker
+# ══════════════════════════════════════════
+docker-compose.override.yml
+
+# ══════════════════════════════════════════
+#  AI / ML Models (too large for git)
+# ══════════════════════════════════════════
+*.bin
+*.pt
+*.onnx
+
+# ══════════════════════════════════════════
+#  Local AI-agent workspace and development docs
+# ══════════════════════════════════════════
+.agent/
+docs/
+/端到端数据流转.md
+/前后端交互逻辑.md
+/项目架构解读.md
+/直播切片自动剪辑 Agent 技术方案.md
+/frontend/README.md
+/scripts/migrate_to_orbstack.sh
+
+# Database exports may contain task transcripts and other private data.
+/ai_slice_backup.sql
+/backend/ai_slice_dump.sql
